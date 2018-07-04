@@ -30,10 +30,10 @@ stdin.addListener("data", function (data) {
 
     //IsFinite to ensure the input is a number
     } else if (!isFinite(trimmedData)) {
-        console.log("Please enter a valid number");
+        console.log("Please enter a valid number or type 'exit' if you want to stop calculating");
     //Make sure the number is positive to perform a logic operation
     } else if (data <= 0) {
-        console.log("Please enter a positive number");
+        console.log("Please enter a positive number or type 'exit' if you want to stop calculating");
     } else {
         console.log("");
         console.log("+-------------------------------------------------------------+");
